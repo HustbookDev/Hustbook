@@ -1063,6 +1063,7 @@ textarea,
 .uneditable-input {
   width: 192px; }
 
+/*
 .checkbox,
 .radio {
   margin-bottom: 12px;
@@ -1140,6 +1141,7 @@ textarea,
 .radio .icon,
 .radio .icon-to-fade {
   background-image: url("../images/radio.png"); }
+*/
 
 @media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (-moz-min-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 3 / 2), only screen and (-o-min-device-pixel-ratio: 2 / 1), only screen and (min--moz-device-pixel-ratio: 1.5), only screen and (min-device-pixel-ratio: 1.5), only screen and (min-device-pixel-ratio: 2) {
   .checkbox .icon {

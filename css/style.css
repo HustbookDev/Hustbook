@@ -17,10 +17,17 @@ body {
   float: none;
   margin: 0 auto;
   max-width: 1170px;
+  height: 44px;
 }
 
 .navbar .navbar-inner .nav > li > a {
+  display: inline-block;
   padding: 12px 24px;
+  text-shadow: none;
+}
+
+.navbar .navbar-inner .nav > li.pull-right {
+  float: right !important;
 }
 
 .navbar .nav > .active > a, 
@@ -38,6 +45,9 @@ body {
   background: rgba(255, 255, 255, .5);
   padding: 30px 0;
   border: 1px solid rgba(26, 188, 156, .75);
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  border-radius: 6px;
 }
 
 .form-login .control-label {

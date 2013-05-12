@@ -5,10 +5,10 @@ body {
 }
 
 * {
-  -webkit-transition: all 0.2s ease;
-  -moz-transition: all 0.2s ease;
-  -o-transition: all 0.2s ease;
-  transition: all 0.2s ease;
+  -webkit-transition: color,background,padding,margin,opacity 0.2s ease;
+  -moz-transition: color,background,padding,margin,opacity 0.2s ease;
+  -o-transition: color,background,padding,margin,opacity 0.2s ease;
+  transition: color,background,padding,margin,opacity 0.2s ease;
 }
 
 .navbar .navbar-inner .nav {
@@ -40,7 +40,7 @@ body {
 .jumbotron-container {
   margin-top: 60px;
 }
-.form-login {
+.jumbotron-container .form-horizontal {
   margin-top: 20px;
   background: rgba(255, 255, 255, .5);
   padding: 30px 0;
@@ -49,15 +49,14 @@ body {
   -moz-border-radius: 6px;
   border-radius: 6px;
 }
-
-.form-login .control-label {
+.jumbotron-container .form-horizontal .control-label {
   max-width: 60px;
-  font-size: 16px;
+  font-size: 14px;
   padding-top: 9px;
 }
-.form-login .controls {
-  margin-left: 80px;
+.jumbotron-container .form-horizontal .controls {
+  margin-left: 70px;
 }
-.form-login .btn {
+.jumbotron-container .form-horizontal .btn {
   padding: 6px 18px;
 }

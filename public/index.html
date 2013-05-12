@@ -20,7 +20,40 @@
     <![endif]-->
   </head>
   <body>
-
+    <div class="navbar navbar-fixed-top">
+      <div class="navbar-inner">
+        <ul class="nav">
+          <li class="active"><a href="#"><i class="icon-home"></i> 主页</a></li>
+          <li><a href="#"><i class="icon-tags"></i> 分类信息</a></li>
+          <li><a href="#"><i class="icon-globe"></i> 热点探索</a></li>
+          <li><a class="disabled" href="#"><i class="icon-user"></i> 个人主页</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="container jumbotron-container">
+      <div class="row-fluid">
+        <div class="span8">
+          <img src="img/title-drawing.png" alt="Hustbook drawing">
+        </div>
+        <form class="span4 form-horizontal form-login">
+          <div class="control-group">
+            <label class="control-label" for="loginUserName">用户名</label>
+            <div class="controls">
+              <input type="text" id="loginUserName" name="loginUserName" placeholder="">
+            </div>
+          </div>
+          <div class="control-group">
+            <label class="control-label" for="loginUserPwd">密码</label>
+            <div class="controls">
+              <input type="password" id="loginUserPwd" name="loginUserPwd" placeholder="">
+            </div>
+          </div>
+          <div class="control-group">
+            <div class="controls"><a href="#" class="btn btn-primary">登录</a> <a href="#" class="btn">注册</a></div>
+          </div>
+        </form>
+      </div>
+    </div>
     <!-- Load JS here for greater good =============================-->
     <script src="js/jquery-2.0.0.min.js"></script>
     <script src="js/bootstrap.min.js"></script>

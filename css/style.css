@@ -1,0 +1,53 @@
+body {
+  padding-top: 44px;
+  background: url('../img/cream_pixels.png');
+  font-family: "微软雅黑" !important;
+}
+
+* {
+  -webkit-transition: all 0.2s ease;
+  -moz-transition: all 0.2s ease;
+  -o-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}
+
+.navbar .navbar-inner .nav {
+  position: static;
+  left: auto;
+  float: none;
+  margin: 0 auto;
+  max-width: 1170px;
+}
+
+.navbar .navbar-inner .nav > li > a {
+  padding: 12px 24px;
+}
+
+.navbar .nav > .active > a, 
+.navbar .nav > .active > a:hover, 
+.navbar .nav > .active > a:focus {
+  color: #fff;
+  background-color: #1abc9c;
+}
+
+.jumbotron-container {
+  margin-top: 60px;
+}
+.form-login {
+  margin-top: 20px;
+  background: rgba(255, 255, 255, .5);
+  padding: 30px 0;
+  border: 1px solid rgba(26, 188, 156, .75);
+}
+
+.form-login .control-label {
+  max-width: 60px;
+  font-size: 16px;
+  padding-top: 9px;
+}
+.form-login .controls {
+  margin-left: 80px;
+}
+.form-login .btn {
+  padding: 6px 18px;
+}

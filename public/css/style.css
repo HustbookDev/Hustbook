@@ -60,3 +60,8 @@ body {
 .jumbotron-container .form-horizontal .btn {
   padding: 6px 18px;
 }
+
+form.dropdown-menu {
+  padding: 20px;
+  margin-right: -40px;
+}

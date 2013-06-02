@@ -55,9 +55,53 @@
         </ul>
       </div>
     </div>
-    <div class="container jumbotron-container">
+    <div class="container">
       <div class="row-fluid">
-        
+
+        <div class="span8 offset2">
+
+          <form id="form-register" class="form-horizontal form-register">
+            <div class="control-group">
+              <div class="controls"><h1>新用户注册</h1></div>
+            </div>
+            <div class="control-group">
+              <label for="reg_username" class="control-label">用户名</label>
+              <div class="controls">
+                <input class="input-xlarge" type="text" id="reg_username" name="reg_username" placeholder="请输入用户名">
+              </div>
+            </div>
+            <div class="control-group">
+              <label for="reg_password" class="control-label">密码</label>
+              <div class="controls">
+                <input class="input-xlarge" type="text" id="reg_password" name="reg_password" placeholder="请输入密码">
+              </div>
+            </div>
+            <div class="control-group">
+              <label for="reg_password_rp" class="control-label">重复密码</label>
+              <div class="controls">
+                <input class="input-xlarge" type="text" id="reg_password_rp" name="reg_password_rp" placeholder="请重复密码">
+              </div>
+            </div>
+            <div class="control-group">
+              <label for="reg_email" class="control-label">电子邮箱</label>
+              <div class="controls">
+                <input class="input-xlarge" type="text" id="reg_email" name="reg_email" placeholder="请输入电子邮箱">
+              </div>
+            </div>
+            <div class="control-group">
+              <div class="controls">
+                <label class="checkbox" for="reg_eula">
+                  <input type="checkbox" id="reg_eula" name="reg_eula"> 我接受<a href="#">最终用户许可协议</a>。
+                </label>
+              </div>
+            </div>
+            <div class="control-group">
+              <div class="controls">
+                <a href="#" class="btn btn-primary">注册</a> <a href="#form-login" data-toggle="tab" class="btn">返回</a>
+              </div> 
+            </div>
+          </form>
+        </div>
       </div>
     </div>
     <!-- Load JS here for greater good =============================-->

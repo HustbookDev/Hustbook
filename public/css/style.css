@@ -37,7 +37,8 @@ body {
   background-color: #1abc9c;
 }
 
-.jumbotron-container {
+.jumbotron-container,
+.container {
   margin-top: 60px;
 }
 .jumbotron-container .form-horizontal {

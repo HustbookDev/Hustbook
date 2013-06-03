@@ -1,8 +1,8 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="utf-8">
-    <title>Hustbook - 面向华科的社交网络</title>
+    <title>注册 - Hustbook - 面向华科的社交网络</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <!-- Loading Bootstrap -->
@@ -29,7 +29,7 @@
     <div class="navbar navbar-fixed-top">
       <div class="navbar-inner">
         <ul class="nav">
-          <li class="active"><a href="#"><i class="icon-home"></i> 主页</a></li>
+          <li><a href="index.html"><i class="icon-home"></i> 主页</a></li>
           <li><a href="category.html"><i class="icon-tags"></i> 分类信息</a></li>
           <li><a href="explore.html"><i class="icon-globe"></i> 热点探索</a></li>
           <li class="pull-right dropdown">
@@ -48,61 +48,43 @@
                   </div>
                 </div>
                 <div class="control-group">
-                  <div class="controls"><a href="home.html" class="btn btn-primary">登录</a> <a href="#form-register" data-toggle="tab" class="btn">注册</a></div>
+                  <div class="controls"><a href="#" class="btn btn-primary">登录</a> <a href="#form-register" data-toggle="tab" class="btn">注册</a></div>
                 </div>
               </form>
-            <a href="register.html"><i class="icon-pencil"></i> 注册</a></li>
         </ul>
       </div>
     </div>
-    <div class="container jumbotron-container">
+    <div class="container">
       <div class="row-fluid">
-        <div class="span8">
-          <img src="img/title-drawing.png" alt="Hustbook drawing">
-        </div>
 
-        <div class="span4 tab-content">
-          <form id="form-login" class="form-horizontal form-login active fade in tab-pane">
-            <div class="control-group">
-              <label class="control-label" for="login_username">用户名</label>
-              <div class="controls">
-                <input type="text" id="login_username" name="login_username" placeholder="">
-              </div>
-            </div>
-            <div class="control-group">
-              <label class="control-label" for="login_passowrd">密码</label>
-              <div class="controls">
-                <input type="password" id="login_passowrd" name="login_passowrd" placeholder="">
-              </div>
-            </div>
-            <div class="control-group">
-              <div class="controls"><a href="home.html" class="btn btn-primary">登录</a> <a href="#form-register" data-toggle="tab" class="btn">注册</a></div>
-            </div>
-          </form>
+        <div class="span8 offset2">
 
-          <form id="form-register" class="form-horizontal form-register tab-pane fade">
+          <form id="form-register" class="form-horizontal form-register">
+            <div class="control-group">
+              <div class="controls"><h1>新用户注册</h1></div>
+            </div>
             <div class="control-group">
               <label for="reg_username" class="control-label">用户名</label>
               <div class="controls">
-                <input type="text" id="reg_username" name="reg_username" placeholder="请输入用户名">
+                <input class="input-xlarge" type="text" id="reg_username" name="reg_username" placeholder="请输入用户名">
               </div>
             </div>
             <div class="control-group">
               <label for="reg_password" class="control-label">密码</label>
               <div class="controls">
-                <input type="text" id="reg_password" name="reg_password" placeholder="请输入密码">
+                <input class="input-xlarge" type="text" id="reg_password" name="reg_password" placeholder="请输入密码">
               </div>
             </div>
             <div class="control-group">
               <label for="reg_password_rp" class="control-label">重复密码</label>
               <div class="controls">
-                <input type="text" id="reg_password_rp" name="reg_password_rp" placeholder="请重复密码">
+                <input class="input-xlarge" type="text" id="reg_password_rp" name="reg_password_rp" placeholder="请重复密码">
               </div>
             </div>
             <div class="control-group">
               <label for="reg_email" class="control-label">电子邮箱</label>
               <div class="controls">
-                <input type="text" id="reg_email" name="reg_email" placeholder="请输入电子邮箱">
+                <input class="input-xlarge" type="text" id="reg_email" name="reg_email" placeholder="请输入电子邮箱">
               </div>
             </div>
             <div class="control-group">
@@ -125,7 +107,7 @@
     <script src="js/jquery-2.0.0.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/application.js"></script>
-    <script src="js/login.js"></script>
+    <script src="js/register.js"></script>
     <!--[if lt IE 8]>
       <script src="js/icon-font-ie7.js"></script>
       <script src="js/icon-font-ie7-24.js"></script>

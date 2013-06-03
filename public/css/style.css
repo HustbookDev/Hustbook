@@ -173,3 +173,18 @@ article.feed {
   padding: 6px;
   margin: 0;
 }
+
+.explore-form {
+  text-align: center;
+  background: #fff;
+  padding: 18px 30px;
+  border: 1px solid #ccc;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  -webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  -moz-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+#explore-input {
+  height: 40px;
+}

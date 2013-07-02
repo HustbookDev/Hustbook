@@ -4,47 +4,14 @@ body {
   font-family: "微软雅黑" !important;
 }
 
-* {
-  -webkit-transition: color,background,padding,margin,opacity 0.2s ease;
-  -moz-transition: color,background,padding,margin,opacity 0.2s ease;
-  -o-transition: color,background,padding,margin,opacity 0.2s ease;
-  transition: color,background,padding,margin,opacity 0.2s ease;
-}
-
-img.pull-left {
-  margin-right: 10px;
-}
-img.pull-right {
-  margin-left: 10px;
-}
-.nav a{
-  text-decoration: none;
-}
-
-.navbar .navbar-inner .nav {
-  position: static;
-  left: auto;
-  float: none;
-  margin: 0 auto;
-  max-width: 1170px;
-  height: 44px;
-}
-
-.navbar .navbar-inner .nav > li > a {
-  display: inline-block;
-  padding: 12px 24px;
-  text-shadow: none;
+.navbar .nav {
+  font-size: 20px;
+  font-weight: normal;
 }
 
 .navbar .navbar-inner .nav > li.pull-right {
+  font-size: 14px;
   float: right !important;
-}
-
-.navbar .nav > .active > a, 
-.navbar .nav > .active > a:hover, 
-.navbar .nav > .active > a:focus {
-  color: #fff;
-  background-color: #1abc9c;
 }
 
 .jumbotron-container,
@@ -132,10 +99,6 @@ form.dropdown-menu {
   font-size: 12px;
 }
 
-.home-feeds .tab-pane{
-  padding: 0 18px;
-}
-
 article.feed {
   background: #fff;
   padding: 6px 10px 16px 10px;
@@ -147,6 +110,16 @@ article.feed {
   margin-bottom: 10px;
 }
 
+.feed-col {
+  vertical-align: top;
+  display: inline-block;
+  width: 48.5%;
+}
+
+.feed-col:first-child {
+  margin-right: 2%;
+}
+
 .feed-profile-img {
   float: left;
   display: block;
@@ -154,6 +127,10 @@ article.feed {
 
 .feed-content {
   margin-left: 80px;
+}
+
+.feed-tools {
+  margin-left: -70px;
 }
 
 #feeds-tab a{
@@ -167,7 +144,7 @@ article.feed {
 }
 #category-nav .accordion-heading > a:hover {
   color: #fff;
-  background-color: #1abc9c;
+  background-color: #39BFB9;
 }
 #category-nav .accordion-inner {
   padding: 6px;

@@ -47,36 +47,48 @@
         </ul>
       </div>
     </div>
-    <div class="container">
-      <div class="row-fluid home-profile">
-        <div class="span3 profile-info-large">
-          <img src="assets/profileimg/Deadmau-5-l.jpg" alt="">
-          <div class="profile-info-dashboard">
-            <span class="profile-info-follow">192</span>
-            <span class="profile-info-follower">168</span>
-            <span class="profile-info-count">255</span>
+    <div class="home-profile">
+      <div class="container">
+        <div class="row-fluid">
+          <div class="span3 profile-info-large">
+            <img src="assets/profileimg/Deadmau-5-l.jpg" alt="">
+            <div class="profile-info-dashboard">
+              <span class="profile-info-follow">192</span>
+              <span class="profile-info-follower">168</span>
+              <span class="profile-info-count">255</span>
+            </div>
           </div>
-        </div>
-        <div class="span9">
-          <h3>Sandman <span class="label">用户等级1</span></h3>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-          <textarea class="span12" name="new_post" id="new_post"></textarea>
-          <div class="new-post-tool">
-            <a href="#" class="btn btn-info"><i class="icon-camera"></i> 图片</a>
-            <a href="#" class="btn btn-warning"><i class="icon-tags"></i> 标签</a>
-            <a href="#" class="btn btn-success"><i class="icon-link"></i> 链接</a>
-            <a href="#" class="btn btn-danger"><i class="icon-youtube-play"></i> 视频</a>
-            <a href="#" class="btn btn-primary"><i class="icon-calendar"></i> 活动</a>
-            <a href="#" class="btn btn-vlarge pull-right">发布 <i class="icon-rocket"></i></a>
+          <span class="profile-speech-bubble toggle-input">Say something...</span>
+          <div class="span9">
+            <a href="#" class="pull-right btn toggle-input"><i class="icon-remove"></i></a>
+            <h3>Sandman <span class="label">用户等级2</span></h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+            <textarea class="span12" name="new_post" id="new_post"></textarea>
+            <div class="new-post-tool">
+              <a href="#" class="btn btn-info"><i class="icon-camera"></i> 图片</a>
+              <a href="#" class="btn btn-warning"><i class="icon-tags"></i> 标签</a>
+              <a href="#" class="btn btn-success"><i class="icon-link"></i> 链接</a>
+              <a href="#" class="btn btn-danger"><i class="icon-youtube-play"></i> 视频</a>
+              <a href="#" class="btn btn-primary"><i class="icon-calendar"></i> 活动</a>
+              <a href="#" class="btn btn-vlarge pull-right">发布 <i class="icon-rocket"></i></a>
+            </div>
           </div>
         </div>
       </div>
-      <div class="row-fluid home-feeds tab-content">
-        <ul id="feeds-tab" class="nav nav-tabs">
+    </div>
+    <div class="navbar">
+      <div class="navbar-inner">
+        <ul id="feeds-tab" class="nav">
           <li class="active"><a href="#feeds-following" data-toggle="tab">我关注的</a></li>
           <li><a href="#feeds-mymsg" data-toggle="tab">我发布的</a></li>
           <li><a href="#feeds-notification" data-toggle="tab">我的提醒</a></li>
         </ul>
+      </div>
+    </div>
+    <div class="container">
+      
+      <div class="row-fluid home-feeds tab-content">
+        
         <div id="feeds-following" class="tab-pane fade in active">
           <div class="feed-col">
             

@@ -16,7 +16,7 @@ body {
 
 .jumbotron-container,
 .container {
-  margin-top: 60px;
+  margin-top: 40px;
 }
 .jumbotron-container .form-horizontal {
   margin-top: 20px;
@@ -49,27 +49,104 @@ form.dropdown-menu {
 }
 
 .home-profile {
-  margin-bottom: 20px;
+  min-height: 320px;
+  padding-top: 40px;
+  padding-bottom: 20px;
+  background: url(../assets/coverimg/wallpaper-2497046.jpg) no-repeat center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+
 }
 
 .home-profile .span9 {
-  margin-top: 78px;
+  display: inline-block;
+  max-height: 0;
+  overflow: hidden;
+  padding: 16px;
+  vertical-align: bottom;
+  background: #fff;
+  background: rgba(255, 255, 255, .9);
+  border: 1px solid #ccc;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  -webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  -moz-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  opacity: 0;
+  -webkit-transition-duration: 0.6s;
+  -moz-transition-duration: 0.6s;
+  -o-transition-duration: 0.6s;
+  transition-duration: 0.6s;
+}
+
+.home-profile.active .span9 {
+  max-height: 400px;
+  opacity: 1;
+}
+
+.home-profile .container {
+  position: relative;
 }
 
 .profile-info-large {
   text-align: center;
   padding: 4px;
-  width: 200px;
+  margin-top: 80px;
+  width: 108px !important;
+  max-height: 108px;
+  overflow: hidden;
+  vertical-align: bottom;
+  font-size: 50%;
   background: #fff;
   border: 1px solid #ccc;
   border: 1px solid rgba(0, 0, 0, 0.2);
   -webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
   -moz-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  -webkit-transition-duration: 0.6s;
+  -moz-transition-duration: 0.6s;
+  -o-transition-duration: 0.6s;
+  transition-duration: 0.6s;
+}
+
+.profile-speech-bubble {
+  display: inline-block;
+  position: absolute;
+  top: 80px;
+  left: 120px;
+  width: 240px;
+  height: 80px;
+  font-size: 18px;
+  color: #aaa;
+  padding: 16px 16px 16px 32px;
+  opacity: 0.9;
+  background: top left no-repeat url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAPAAAABQCAYAAAAnSfh8AAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyFpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuNS1jMDE0IDc5LjE1MTQ4MSwgMjAxMy8wMy8xMy0xMjowOToxNSAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENDIChXaW5kb3dzKSIgeG1wTU06SW5zdGFuY2VJRD0ieG1wLmlpZDo0QjQwMTZCN0U5MjQxMUUyOEE5QzkxOUU1NkMxRDQ0NiIgeG1wTU06RG9jdW1lbnRJRD0ieG1wLmRpZDo0QjQwMTZCOEU5MjQxMUUyOEE5QzkxOUU1NkMxRDQ0NiI+IDx4bXBNTTpEZXJpdmVkRnJvbSBzdFJlZjppbnN0YW5jZUlEPSJ4bXAuaWlkOjRCNDAxNkI1RTkyNDExRTI4QTlDOTE5RTU2QzFENDQ2IiBzdFJlZjpkb2N1bWVudElEPSJ4bXAuZGlkOjRCNDAxNkI2RTkyNDExRTI4QTlDOTE5RTU2QzFENDQ2Ii8+IDwvcmRmOkRlc2NyaXB0aW9uPiA8L3JkZjpSREY+IDwveDp4bXBtZXRhPiA8P3hwYWNrZXQgZW5kPSJyIj8+l8SI3wAAASZJREFUeNrs08EJwkAQhtEk2IGRrcBKcreYWEcsxnuaWBasYTF2YEA8pADxEAbeO81lLj98bSmPaV3fYwOE06Z0bub5PvX9cUzpZBEIIufSdN9jGC7XZXndan1aBQLptkPEEDhgEUPwgEUMwQMWMQQPWMQQPGARQ/CARQzBAxYxBA9YxBA8YBFD8IBFDMED3iKutVoPIgYMCBgQMAgYEDAgYEDAIGBAwICAAQGDgAEBAwIGAQMCBgQMCBgEDAgYEDAgYBAwIGBAwCBgQMCAgAEBg4ABAQMCBgEDAgYEDAgYBAwIGBAwIGAQMCBgQMAgYEDAgIABAYOAAQEDAgYEDAIGBAwIGAQMCBgQMCBgEDAgYEDAgIBBwICAgR8d/nnOuVgQdvQRYABGQ2wXGE75xwAAAABJRU5ErkJggg==');
+  -webkit-transition-duration: 0.3s;
+  -moz-transition-duration: 0.3s;
+  -o-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+}
+
+.profile-speech-bubble:hover {
+  opacity: 1;
+}
+
+.home-profile.active .profile-info-large {
+  width: 23.404255319148934% !important;
+  font-size: 100%;
+  margin-top: 0;
+  max-height: 300px;
+}
+
+.home-profile.active .profile-speech-bubble {
+  opacity: 0;
 }
 
 .profile-info-dashboard {
   margin-top: 6px;
+  max-height: 40px;
+  overflow: hidden;
   display: inline-block;
   width: 100%;
 }
@@ -81,19 +158,19 @@ form.dropdown-menu {
   text-align: center;
 }
 
-.profile-info-follow:before {
+.home-profile.active .profile-info-follow:before {
   content: '关注';
   display: block;
   font-size: 12px;
 }
 
-.profile-info-follower:before {
+.home-profile.active .profile-info-follower:before {
   content: '粉丝';
   display: block;
   font-size: 12px;
 }
 
-.profile-info-count:before {
+.home-profile.active .profile-info-count:before {
   content: '消息';
   display: block;
   font-size: 12px;
@@ -131,6 +208,10 @@ article.feed {
 
 .feed-tools {
   margin-left: -70px;
+}
+
+#feeds-tab {
+  max-width: 480px;
 }
 
 #feeds-tab a{

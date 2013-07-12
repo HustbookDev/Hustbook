@@ -1,8 +1,8 @@
 * {
-  -webkit-transition: color,background,padding,margin,opacity 0.2s ease;
-  -moz-transition: color,background,padding,margin,opacity 0.2s ease;
-  -o-transition: color,background,padding,margin,opacity 0.2s ease;
-  transition: color,background,padding,margin,opacity 0.2s ease;
+  -webkit-transition: all 0.2s ease;
+  -moz-transition: all 0.2s ease;
+  -o-transition: all 0.2s ease;
+  transition: all 0.2s ease;
 }
 
 a {
